@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$project = 'hax-utils-1';
+$project = 'hax-games-1';
 
 if (!open(S,"git --no-pager log --max-count=1 |")) { exit 1; }
 my $lcommit = "x";
@@ -61,7 +61,7 @@ if (!( -f "$filename.xz" )) {
 		chomp $fn;
 		next unless -d $fn;
 #		print "$fn\n";
-		$list .= "hax-utils-1/$fn ";
+		$list .= "hax-games-1/$fn ";
 	}
 	close(XX);
 	die if $list eq '';

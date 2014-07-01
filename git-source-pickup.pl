@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$project = 'hax-utils-1';
+$project = 'hax-games-1';
 
 print "Ensuring the build tree is clean...\n";
 $x = system("./git-update-all-wo-push");
