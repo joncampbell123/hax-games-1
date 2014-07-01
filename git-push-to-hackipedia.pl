@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$project = 'hax-utils-1';
+$project = 'hax-games-1';
 
 if (!open(S,"git --no-pager log --max-count=1 |")) { exit 1; }
 my $lcommit = "x";
@@ -59,5 +59,5 @@ my $filename = "../".($as ne "" ? $as : $project)."-$lcdate-commit-$lcommit-bina
 die unless -f "$filename.xz";
 $what .= "$filename.xz ";
 
-$x = system("scp -p -P 52222 $what root\@192.168.250.1:/mnt/main/jmc-storage/docs/Projects/hax-utils-1/");
+$x = system("scp -p -P 52222 $what root\@192.168.250.1:/mnt/main/jmc-storage/docs/Projects/hax-games-1/");
 
